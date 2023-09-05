@@ -1,0 +1,2 @@
+# neca-python-project
+FINDS THE HYPOTENUS OF A GIVEN TRIANGLE
