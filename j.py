@@ -21,6 +21,7 @@ time.sleep(3)
 day = ["Morning","Afternoon", "Evening",  ]
 while True:
   a = input("Enter a day: ")
+  a=a.capitalize()
   if a in day:
     print(f"Good {a}")
     break
@@ -48,7 +49,7 @@ print("Please don't be shy")
 # here we go
 
 
-Name=input("NAME:")
+Name=input("NAME: ")
 print("My,My")
 time.sleep(1)
 print(f"Your Name is {Name}")
@@ -57,7 +58,7 @@ print(f"{Name}, That's a LOVELY NAME.")
 time.sleep(3)
 
 print(f"Okay {Name}, Are you ready?")
-answer=input("Enter Yes or No:")
+answer=input("Enter Yes or No: ")
 answer=answer.lower()
 if answer=="yes":
   print("YEAH👍😁👍👍👍")
@@ -65,46 +66,44 @@ elif answer=="no":
   print("Don't worry, You going to have fun👌👌👌 ")
 time.sleep(2)
 
-print(f"So {Name},We are going to Focus on two subjects\nMATH or ENGLISH")
+print(f"So {Name}, We are going to Focus on two subjects")
+time.sleep(2)
+print("MATH or ENGLISH")
+Subject=input("Enter option: ")
+
+while Subject not in ("Math or English"):
+  print("Please input 'Either Math or English'")
+  Input=input("Math or English: ")
+  if 'Math' in Input.capitalize():
+    break
+time.sleep(1)
+
+print(f"Okay {Name}, {Input} it is!")
+time.sleep(2)
+print("Now, There are Sub Subjects we have for now.\n I will show you the list")
+time.sleep(2)
+List='''
+1. BODAMS
+2. Profit and Loss
+3. Percentages
+4. Trigonometry
+5. LCM (Least Common Multiple)
+'''
+time.sleep(2)
+print('Now, You have the Freedom to pick which one you want to learn\nUnderstand now.')
+time.sleep(2)
+Sub=input("Pick one, Please: ")
+time.sleep()
+sub=['BODMAS', 'Profit and Loss', 'Percentages', 'Trigonometry', 'LCM']
+while True:
+  first=sub[0]
+  if first in sub:
+    print(f"You picked {first}")
+    break
 
 
 
 
-# FOR MULTILINNING STRINGS
-# multi = '''Hi, 
-# I am a multiline string😁
-
-# Nice to meet you
-# '''
-# test = "lol"
-
-# print(multi)
-
-# game =f"""
-# ================================
-# |   Helooooo                   |
-# |   Good to be hearrr          |
-# |   {test}                   |
-# ================================
-# """
-# print( game)
 
 
-# a = 9
-# b = 12
-# d = (a**2 + b**2) ** 0.5
 
-# Hi= f'''
-#      __________
-# c = √{a}^2 + {b}^2
-#     ____
-# c= √{a**2} + {b**2}
-#      ___
-# c = √ {a**2 + b**2}
-
-# c = {d}
-
-# Therefore, the hypotenus of tria with sides {a} and {b} is {d}
-
-#  '''
-# print(Hi)
