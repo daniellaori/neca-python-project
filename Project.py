@@ -1,63 +1,57 @@
-# ALGORTHIM THAT RECEIVES THE OPPISITE AND ADJCENT THEN CALCULATES THE HYPOTENUS
-  #  For the End User to Understand the pythagoras theorem
-
-# 
-
-
 import time
 
-Hello='''
+Greet='''
 ================================
 |  Good Morning or Afternoon   |                                                                       
 ================================ 
 '''
-print(Hello)
+print(Greet)
 time.sleep(2)
  
-G='''
+Question='''
 =================
 |Is it Morning: |
 =================
 '''
-print(G)
+print(Question)
 time.sleep(2)
 
 
 
 def call():
-  a=input("Please input day:")
-  f=(a)
+  Day=input("Please input day:")
+  f=(Day)
   return f
 
 
-H=f'''
+Respond=f'''
 ====================
 |Yay, Good {call()}|
 ===================
 '''
-print(H)
+print(Respond)
 time.sleep(2)
 
-L='''
+Explain='''
 =======================================================================
 |Today, I will be helping you to Calculate The Hypotenus of a Triangle|
 |using the Famous Pythagoras Theorem                                  |
 =======================================================================
 '''
-for letter in L:
+for letter in Explain:
   print(letter,end='')
   time.sleep(0.007)
 
 time.sleep(2)
-Y='''
+Begin='''
 ===============
 |Let\'s Begin |
 ===============
 '''
-print(Y)
+print(Begin)
 time.sleep(2)
 
-S='''
+formula='''
 ===================
 | FORMULA:        |
 |________________ |
@@ -69,7 +63,7 @@ S='''
 |c^2=Opp^2 + Adj^2|
 ================== 
 ''' 
-for line in S:
+for line in formula:
   print(line, end='')  
   time.sleep(0.012)
 time.sleep(2)
@@ -88,7 +82,7 @@ while answer.lower() == 'yes':
 
     d=round((opp**2 + adj**2)**0.5 , 2)
 
-    Hi= f'''
+    Calculate= f'''
           __________
     c = √{opp}^2 + {adj}^2
         
@@ -103,27 +97,54 @@ while answer.lower() == 'yes':
 
     '''
 
-    for line in Hi:
+    for line in Calculate:
         print(line,end='')
     time.sleep(0.024)
 
       
-    print("🎉🎉Congratulation🎉🎉\n Thank you. ")
-    answer = input("Why not try another number? (yes/no): ")
+    print("🎉🎉Congratulation🎉🎉")
+    time.sleep(2)
+    print("You now Understand the Maths Calculation of The Almighty Pythagoras Theorem   ")
+    time.sleep(3)
+    answer = input("For the Fun of it, Why not try Another Number? (yes/no): ")
 
     while answer.lower() not in ('yes','no') :
       print("Invaild input")
-      answer = input("try again ? (yes/no): ")
+      answer = input("Come on, You can do better....Try again ? (yes/no): ")
 
     if answer == "no":
-      print("Thank you, That is All")
+      print("ARE YOU SURE? WELL,It was fun while it lasted 😥. ")
+      time.sleep(2)
+      print("Please, Give yourself An Applause..............👏👏")
+      time.sleep(3) 
+      print("That was Great, Wasn't it?\nHave wonderful day.")
+      time.sleep(3)
+      print("OH,And one more thing")
+      time.sleep(2)
+      print("DON'T FORGET TO STAY POSTIVE WHILE CALCULATING NUMBERS")
+      time.sleep(2)
+      print("AND ALWAYS, I MEAN ALWAYS.")
+      time.sleep(2)
+      print("WEAR A SMILE😁😁😀")
 
   except Exception as e:
-    print("Error")
-    answer = input("try again ? (yes/no): ")
+    print("❕❕❕WHAT AN ERROR❕❕❕")
+    answer = input("Want to Restart Again?(yes/no): ")
   
     while answer.lower() not in ('yes','no') :
-      answer = input("try again ? (yes/no): ")
+      answer = input("Please input a yes or a NO: ")
 
     if answer == "no":
-      print("Thank you, That is All")
+      print("ARE YOU SURE? WELL,It was fun while it lasted 😥.")
+      time.sleep(2)
+      print("Please, Give yourself An Applause..............👏👏")
+      time.sleep(3) 
+      print("That was Great, Wasn't it?\nHave wonderful day.")
+      time.sleep(3)
+      print("OH,And one more thing")
+      time.sleep(2)
+      print("DON'T FORGET TO STAY POSTIVE WHILE CALCULATING NUMBERS")
+      time.sleep(2)
+      print("AND ALWAYS, I MEAN ALWAYS.")
+      time.sleep(2)
+      print("WEAR A SMILE😁😁😀")
